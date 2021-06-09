@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body{
+    background-color:hsl(233, 47%, 7%);
+    font-size: 15px;
+    line-height: 2rem;
+}
+
+.card{
+    position: relative;
+    margin: 5rem 1rem;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 40vh;
+    background-size: 100% 100%;
+    background-image: linear-gradient(hsla(277, 100%, 25%, 0.5),hsla(277, 100%, 25%, 0.5)), url('/../images/image-header-mobile.jpg');
+}
+
+.text {
+    margin: 1.5rem;
+}
+
+strong{
+    color: hsl(277, 64%, 61%);
+}
+
+h1, .val {
+    font-family: 'Inter', san-serif;
+    color: hsl(0, 0%, 100%);
+}
+.list-stats{
+    margin-top: 2.5rem;
+}
+.val{
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+p, li{
+    font-family: 'Lexend Deca', san-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+li{
+    list-style: none;
+    text-transform: uppercase;
+
+}
+
+@media  screen and (min-width:1440px) {
+    .card{
+        position: absolute;
+        flex-direction: row-reverse;
+        text-align: left;
+        width: 80vw;
+        height: 73vh;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-image{ 
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        width: inherit;
+        height: inherit;
+        background-image: linear-gradient(hsla(277, 100%, 25%, 0.5),hsla(277, 100%, 25%, 0.5)), url('/../images/image-header-desktop.jpg');
+    }
+
+    .list-stats{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin-top: 2rem;
+
+        & li{
+            margin-right: 2rem;
+        }
+    }
+
+    .text{
+        margin: 3rem 4rem;
+        padding: 0 4rem;
+        & h1{
+            font-size: 2.25rem;
+            line-height: 3rem;
+        }
+    }
+}

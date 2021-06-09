@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  background-color: #090b1a;
+  font-size: 15px;
+  line-height: 2rem;
+}
+
+.card {
+  position: relative;
+  margin: 5rem 1rem;
+  background-color: #1b1938;
+  border-radius: 10px;
+  padding-bottom: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-image {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 40vh;
+  background-size: 100% 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(79, 0, 128, 0.5)), to(rgba(79, 0, 128, 0.5))), url("/../images/image-header-mobile.jpg");
+  background-image: linear-gradient(rgba(79, 0, 128, 0.5), rgba(79, 0, 128, 0.5)), url("/../images/image-header-mobile.jpg");
+}
+
+.text {
+  margin: 1.5rem;
+}
+
+strong {
+  color: #aa5cdb;
+}
+
+h1, .val {
+  font-family: 'Inter', san-serif;
+  color: white;
+}
+
+.list-stats {
+  margin-top: 2.5rem;
+}
+
+.val {
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+p, li {
+  font-family: 'Lexend Deca', san-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: left;
+    width: 80vw;
+    height: 73vh;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+  .card-image {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: inherit;
+    height: inherit;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(79, 0, 128, 0.5)), to(rgba(79, 0, 128, 0.5))), url("/../images/image-header-desktop.jpg");
+    background-image: linear-gradient(rgba(79, 0, 128, 0.5), rgba(79, 0, 128, 0.5)), url("/../images/image-header-desktop.jpg");
+  }
+  .list-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .list-stats li {
+    margin-right: 2rem;
+  }
+  .text {
+    margin: 3rem 4rem;
+    padding: 0 4rem;
+  }
+  .text h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
