@@ -73,8 +73,8 @@ li {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     text-align: left;
-    width: 80vw;
-    height: 73vh;
+    width: 75vw;
+    height: 55vh;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
