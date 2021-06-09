@@ -113,4 +113,53 @@ li {
     line-height: 3rem;
   }
 }
+
+@media screen and (min-width: 736px) {
+  .card {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: left;
+    width: 90vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+  .card-image {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: inherit;
+    height: inherit;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(79, 0, 128, 0.5)), to(rgba(79, 0, 128, 0.5))), url("../../images/image-header-desktop.jpg");
+    background-image: linear-gradient(rgba(79, 0, 128, 0.5), rgba(79, 0, 128, 0.5)), url("../../images/image-header-desktop.jpg");
+  }
+  .list-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .list-stats li {
+    margin-right: 2rem;
+  }
+  .text {
+    margin: 2rem 4rem;
+    padding: 0 4rem;
+  }
+  .text h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

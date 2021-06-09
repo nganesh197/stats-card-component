@@ -103,3 +103,47 @@ li{
         }
     }
 }
+//my personal choice of having the desktop layout work for a smaller desktop screen
+@media  screen and (min-width:736px) {
+    .card{
+        position: absolute;
+        flex-direction: row-reverse;
+        text-align: left;
+        width: 90vw;
+        height: 70vh;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-image{ 
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        width: inherit;
+        height: inherit;
+        background-image: linear-gradient(hsla(277, 100%, 25%, 0.5),hsla(277, 100%, 25%, 0.5)), url('../../images/image-header-desktop.jpg');
+    }
+
+    .list-stats{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin-top: 2rem;
+
+        & li{
+            margin-right: 2rem;
+        }
+    }
+
+    .text{
+        margin: 2rem 4rem;
+        padding: 0 4rem;
+        & h1{
+            font-size: 2.25rem;
+            line-height: 3rem;
+        }
+    }
+}
